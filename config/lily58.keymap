@@ -13,7 +13,13 @@
         copy: copy {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp C>, <&macro_press>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_CONTROL>,
+                <&macro_tap>,
+                <&kp C>,
+                <&macro_release>,
+                <&kp LEFT_CONTROL>;
 
             label = "COPY";
         };
@@ -24,6 +30,13 @@
             bindings = <&kp V>, <&macro_press>;
 
             label = "PASTE";
+        };
+
+        new_macro: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none>;
+            label = "NEW_MACRO";
         };
     };
 
@@ -63,7 +76,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                    &kp F7     &kp F8                &kp F9                 &kp F10         &kp F11          &kp F12
 &trans      &trans        &trans        &kp UP_ARROW  &trans        &trans                          &kp CARET  &kp AMPERSAND         &kp STAR               &kp LBKT        &kp RBKT         &kp BACKSLASH
 &trans      &trans        &kp LEFT      &kp DOWN      &kp RIGHT     &trans                          &kp PLUS   &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp PIPE
-&trans      &trans        &trans        &trans        &trans        &trans        &trans    &trans  &kp EXCL   &kp EQUAL             &kp GREATER_THAN       &kp DOLLAR      &kp LESS_THAN    &kp GREATER_THAN
+&trans      &trans        &trans        &trans        &copy         &trans        &trans    &trans  &kp EXCL   &kp EQUAL             &kp GREATER_THAN       &kp DOLLAR      &kp LESS_THAN    &kp GREATER_THAN
                                         &trans        &trans        &trans        &trans    &trans  &trans     &trans                &trans
             >;
 
