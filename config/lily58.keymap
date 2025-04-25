@@ -103,7 +103,7 @@
 &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_CLR_ALL                      &kp F7     &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &kp LEFT_BRACE    &kp RIGHT_BRACE    &kp F12
 &trans      &trans        &trans        &kp UP_ARROW  &trans        &trans                              &kp CARET  &kp NON_US_BACKSLASH  &kp UP_ARROW           &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
 &trans      &kp LA(A)     &kp LEFT      &kp DOWN      &kp RIGHT     &trans                              &kp PLUS   &kp LEFT              &kp DOWN               &kp RIGHT         &trans             &trans
-&trans      &trans        &kp LA(Z)     &kp LA(X)     &kp LA(C)     &kp LA(V)       &trans    &kp PIPE  &kp EXCL   &kp EQUAL             &kp GREATER_THAN       &trans            &trans             &trans
+&trans      &trans        &kp LA(Z)     &kp LA(X)     &kp LA(C)     &kp LA(V)       &trans    &kp PIPE  &kp EXCL   &kp EQUAL             &kp LESS_THAN          &kp GREATER_THAN  &trans             &trans
                                         &trans        &trans        &trans          &trans    &trans    &trans     &trans                &trans
             >;
 
